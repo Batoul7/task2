@@ -1,0 +1,33 @@
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.deal {
+    background-color: #fbfbfb;
+}
+.deal-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+.deal-content .image img {
+    max-width: 100%;
+}
+.deal-content .extra-info {
+    padding: 10px;
+}
+.deal-content .extra-info span {
+    display: block;
+}
+/* Media */
+@media (max-width: 768px) {
+    .buttons {
+        justify-content: center;
+    }
+    .schedule {
+        display: block;
+    }
+}

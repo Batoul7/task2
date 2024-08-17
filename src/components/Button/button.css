@@ -1,0 +1,11 @@
+.button  a {
+    background-color: var(--second-color);
+    padding:10px 25px;
+    width: fit-content;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;;
+}
+a.active  {
+    background-color: var(--main-color);
+}
