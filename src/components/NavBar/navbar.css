@@ -1,8 +1,20 @@
-nav {
-   padding: 20px 0;
-   color: var(--second-color);
+.navbar {
+    z-index: 1000; 
+    background-color: white;
+    padding: 20px 0;
+    color: var(--second-color);
+    width: 100%;
+   
 }
-nav .links {
+.navbar.sticky {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed; 
+    top: 0; 
+    transition: background-color 0.3s ease; 
+    background-color: #F9D7CD;
+}
+.navbar .links {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -10,18 +22,18 @@ nav .links {
     flex: 1;
     margin-right: 20px;
 }
-nav .links li {
+.navbar .links li {
     padding: 10px; 
     font-weight: bold;
     cursor: pointer;
 }
-nav .links a {
+.navbar .links a {
     color: var(--second-color);
 }
-nav .links li:hover {
+.navbar .links li:hover {
     color: var(--main-color);
 }
-nav .bars {
+.navbar .bars {
     width: 30px;
     display: none;
     flex-wrap: wrap;
@@ -105,15 +117,15 @@ nav .bars {
 }
 /* Media */
 @media (max-width: 992px) {
-    nav .links li {
+    .navbar .links li {
         padding: 5px; 
     }
 }
 @media (max-width: 768px) {
-    nav .bars {
+    .navbar .bars {
         display: flex;
     }
-    nav .links {
+    .navbar .links {
         display: none;
     }
     .schedule {
