@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css'
-import './../header.css'
-import Schedule from './Schedule';
+import '../Header/header.css'
+import Schedule from '../Schedule/Schedule';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBarsStaggered, faClose } from '@fortawesome/free-solid-svg-icons';
 

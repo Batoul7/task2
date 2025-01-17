@@ -1,9 +1,8 @@
 .contact {
-    background-image: url("/public/images/contact-bg.jpg");
+    background-image: url("/src/assets/images/contact-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px ;
-    width: 100%;
 } 
  .contact-content {
     display: grid;
@@ -17,8 +16,8 @@
     flex-direction: column;
     gap: 30px;
 }
+
 .contact-content .map iframe {
-    width:100%; 
     height:450px;
     border:0;
 }
@@ -77,6 +76,26 @@
     margin: 0px auto;
 }
 /* Media  */
+@media (max-width:350px) {
+    .contact-content .map iframe {
+       max-width: 90%;
+    }
+    .contact-content .map {
+        width: fit-content;
+    }
+    .call {
+        width: fit-content;
+    }
+    .contact .form {
+        padding: 20px;
+        width: 280px;
+    }
+}
+@media (min-width:351px) {
+    .contact-content .map iframe {
+       width: 100%;
+    }
+}
 @media (max-width: 992px) {
     .card .image img {
         width: 80%;

@@ -1,5 +1,4 @@
 import React from 'react';
-// import InfoIcon from './../../assets/images/info-icon-01.png';
 import './box.css'
 
 const Box = ({info}) => {

@@ -1,34 +1,14 @@
 import React from 'react';
-import Feature from './../../../public/images/featured.jpg';
-import FeatureIcon from './../../../public/images/featured-icon.png';
+import Feature from '../../assets/images/featured.jpg';
+import FeatureIcon from '../../assets/images/featured-icon.png';
 import './Featured.css'
 import Box from '../Box/Box';
 import Title from '../Title/Title';
+import { FeaturedIInformation } from '../../Data/FeaturedData';
 
 
 const Featured = () => {
-    const information = [
-        {
-            image:"/images/info-icon-01.png",
-            title:"250 m2",
-            desc:"Total Flat Space"
-        },
-        {
-            image:"/images/info-icon-02.png",
-            title:"Contract",
-            desc:"Contract Ready"
-        },
-        {
-            image:"/images/info-icon-03.png",
-            title:"Payment",
-            desc:"Payment Process"
-        },
-        {
-            image:"/images/info-icon-04.png",
-            title:"Safety",
-            desc:"24/7 Under Control"
-        },
-    ]
+   
   return (
     <div className='container main-padding'>
         <div className="text">
@@ -38,10 +18,10 @@ const Featured = () => {
         <div className="featured-content">
             <div className="one">
                 <div className="featured-img">
-                    <img src={Feature} alt=''/>
+                    <img src={Feature} alt='feature'/>
                 </div>
                 <div className="featured-icon">
-                    <img src={FeatureIcon} alt='' />
+                    <img src={FeatureIcon} alt='featured-icon' />
                 </div>
             </div>
             <div className="two">
@@ -54,7 +34,7 @@ const Featured = () => {
                 </div>
             </div>
             <div style={{boxShadow:"0px 0px 10px 5px #ccc",padding:"10px", height:"480px", overflow:"hidden"}}>
-                <Box info={information}/>
+                <Box info={FeaturedIInformation}/>
             </div>
         </div>
     </div>

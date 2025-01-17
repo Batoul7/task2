@@ -4,7 +4,7 @@ import './video.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import VideoBox from './VideoBox';
-
+import videoframe from '/src/assets/images/video-frame.jpg' 
 
 const Video = () => {
     const data = [
@@ -29,7 +29,7 @@ const Video = () => {
             <h2>Get Closer View & Different Feeling</h2>
         </div>
         <div className="video-image">
-            <img src='/public/images/video-frame.jpg' alt=''/>
+            <img src={videoframe} alt='video-image'/>
             <div className="play">
                 <FontAwesomeIcon icon={faPlay}/>
             </div>

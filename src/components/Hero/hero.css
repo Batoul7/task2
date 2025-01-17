@@ -1,97 +1,54 @@
-.hero {
+.hero{
     position: relative;
-    height: calc(100vh - 132px);
-    background-size: cover;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero .text {
+    height: calc(100vh - 70px);
+
+} 
+.hero-title
+{
     position: absolute;
     top:50%;
-    left: 0;
-    transform: translate(50%, -50%);
-    width: 50%;
-    padding: 50px;
-}
-.hero .text .address {
-    padding: 5px 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+.hero-title p
+{
     background-color: white;
-    width: 150px;
-    text-align: center;
+    padding: 15px ;
+    width: max-content;
+    margin-bottom: 20px;
+    font-size: 16px;
     font-weight: 600;
-    color: var(--second-color);
 }
-.hero .text .address span {
+.hero-title p span
+{
     color: var(--main-color);
 }
-.hero .text h1 {
+.hero-title h1
+{
     text-transform: uppercase;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
+    width: 100%;
 }
-.change-back {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.395);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.hero-page img {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 125px);
 }
-.change-back.left {
-    left: 20px;
-}
-.change-back.right {
-    right: 20px;
-}
-.bullets {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 30px;
-    display: flex;
-}
-.bullets li {
-    margin: 0 5px;
-    list-style: none;
-    width: 18px;
-    height: 18px;
-    background-color: white;
-    border-radius: 50%;
-}
-.bullets li.active {
-    background: var(--main-color);
-}
-.hero1 { background-image: url('/public/images/banner-01.jpg'); }
-.hero2 { background-image: url('/public/images/banner-02.jpg'); }
-.hero3 { background-image: url('/public/images/banner-03.jpg'); } 
-
 /* Media  */
-@media (max-width: 768px) {
-    .hero .title {
-        width: 400px;
-        max-width: 100%;
-        transform: translateY(-50%);
-    }
-    .hero .title h1 {
+@media(max-width:768px)
+{
+    .hero-title h1
+    {
         font-size: 35px;
+        font-weight: 600;
         width: 100%;
     }
-   .bullets {
-    bottom: 80px;
-}
+    .hero-title p
+    {
+        padding: 10px  ;
+        font-size: 14px;
+        font-weight: 600;
+    }
 }

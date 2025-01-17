@@ -3,57 +3,26 @@ import Button from '../Button/Button'
 import Title from '../Title/Title'
 import './deal.css'
 import Box from '../Box/Box'
-import Schedule from '../Header/NavBar/Schedule'
+import Schedule from '../Schedule/Schedule'
+import imgDeal from '/src/assets/images/deal-01.jpg'
+import { ButtonData, Information } from '../../Data/DealData'
 
 const Deal = () => {
-    const data = [
-        {
-            name:"Appartment"
-        },
-        {
-            name:"VillaHouse"
-        },
-        {
-            name:"Penthouse"
-        },
-    ]
-
-    const information = [
-        {
-            title:"Total Flat Space",
-            desc:"185 m2",
-        },
-        {
-            title:"Floor number",
-            desc:"26th",
-        },
-        {
-            title:"Number of rooms",
-            desc:"4",
-        },
-        {
-            title:"Parking Available",
-            desc:"Yes",
-        },
-        {
-            title:"Payment Process",
-            desc:"Bank",
-        }
-    ]
+    
   return (
     <div className="deal main-padding">
         <div className='container '>
             <Title title={"Best Deal"}/>
             <h2 style={{marginBottom:"20px"}}>Find Your Best Deal Right Now!</h2>
             <div className='buttons'>
-                <Button data={data}/>
+                <Button data={ButtonData}/>
             </div>
             <div className="deal-content main-padding">
                 <div style={{boxShadow:"0px 0px 10px 5px #ccc", height:"500px"}}>
-                    <Box info={information}/>
+                    <Box info={Information}/>
                 </div>
                 <div className="image">
-                    <img src='/public/images/deal-01.jpg'/>
+                    <img src={imgDeal} alt='deal'/>
                 </div>
                 <div className="extra-info">
                     <h3 style={{marginBottom:"10px"}}>Extra Info About Property</h3>

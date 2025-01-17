@@ -2,16 +2,18 @@ import React from 'react'
 import './contact.css'
 import Title from '../Title/Title'
 import Footer from '../Footer/Footer'
+import icon1 from "/src/assets/images/phone-icon.png"
+import icon2 from "/src/assets/images/email-icon.png"
 
 const Contact = () => {
     const data = [
         {
-            image:"/public/images/phone-icon.png",
+            image:icon1,
             title:"010-020-0340",
             desc:"Phone Number",
         },
         {
-            image:"/public/images/email-icon.png",
+            image:icon2,
             title:"info@villa.co",
             desc:"Busniss Email",
         }

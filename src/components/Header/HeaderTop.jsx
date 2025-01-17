@@ -21,16 +21,16 @@ const HeaderTop = () => {
                 </div>
                 <div className="social flex">
                     <div className="icon">
-                        <FontAwesomeIcon icon={faFacebook}/>
+                        <a href='https://facebook.com'><FontAwesomeIcon icon={faFacebook}/></a>
                     </div>
                     <div className="icon">
-                        <FontAwesomeIcon icon={faTwitter}/>
+                        <a href='https://x.com'><FontAwesomeIcon icon={faTwitter}/></a>
                     </div>
                     <div className="icon">
-                        <FontAwesomeIcon icon={faLinkedin}/>
+                        <a href='https://linkedin.com'><FontAwesomeIcon icon={faLinkedin}/></a>
                     </div>
                     <div className="icon">
-                        <FontAwesomeIcon icon={faInstagram}/>
+                        <a href='https://instagram.com'><FontAwesomeIcon icon={faInstagram}/></a>
                     </div>
                 </div>
             </div>
